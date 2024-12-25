@@ -1,0 +1,232 @@
+body {
+  background-image: url('../img/background.png');
+  background-repeat: no-repeat;
+  font-family: 'Inter', sans-serif;
+  background-size: cover;
+}
+.block-content {
+  width: 90vw;
+  margin: auto;
+}
+/*шапка сайта*/
+.header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.logo {
+  max-width: 206.14px;
+  max-height: 111px;
+  margin-top: 43px;
+  margin-bottom: 43px;
+}
+.headline{
+  font-size: 32px;
+}
+/*тело сайта*/
+/*Выбор поиска*/
+.selecting {
+  display: flex;
+  margin-bottom: 10px;
+}
+.button {
+  width: 140px;
+  height: 53px;
+  font-size: 23px;
+  font-weight: 550;
+  border: none;
+  cursor: pointer;
+}
+.active {
+  color: #9674F9;
+  background: #F0F0F0;
+  box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.4);
+}
+.inactive {
+  color: #000000;
+  background: #DEDEDE;
+  border-color: #DEDEDE;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0.11, 0.11);
+}
+.adress {
+  border-radius: 5px 0 0 5px;
+}
+.links {
+  border-radius: 0 5px 5px 0;
+}
+/*форма поиска*/
+.form {
+  justify-content: center;
+  display: flex;
+}
+.select-kv {
+  overflow: hidden;
+}
+input:placeholder {
+  font-weight: 200;
+  color: #000000;
+}
+.insertion_field {
+  width: 50%;
+  height: 64px;
+  border-radius: 25px;
+  font-size: 22px;
+  border: none;
+  padding-left: 24px;
+  background-color: #9e9e9e45;
+  border: none;
+  box-shadow: inset 1px 1px 3px -8px rgba(0, 0, 0, 0.6);
+}
+.box-meters {
+  display: flex;
+  flex-direction: column;
+  font-size: 22px;
+  margin: 0 7px 0 7px;
+  justify-content: space-around;
+}
+.links-input {
+  display: none;
+}
+#kv-meters {
+  color: #232323;
+  border-color: #DEDEDE;
+  border: none;
+  height: 30px;
+  font-size: 15px;
+  background-color: #9e9e9e45;
+  min-width: 72px;
+}
+.next {
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 27px;
+  font-weight: 200;
+  border-radius: 25px;
+  background: #9674F9;
+  padding: 15px 26px;
+  text-decoration: none;
+  cursor:pointer;
+  margin-left: 15px;
+}
+/*Предупреждение*/
+.warning-box {
+  display: flex;
+  margin-top: 7px;
+  padding-left: 20px;
+}
+.icon {
+  max-width: 21px;
+  max-height: 21px;
+}
+.warning {
+  margin-left: 5px;
+  font-size: 15px;
+  padding-top: 4px;
+}
+.warning_c {
+  color:#BF4545;
+  text-decoration: underline;
+}
+/*вывод статистики*/
+.statistics {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+/*Адаптация под телефон*/
+@media (max-width:400px) {
+  body {
+    background-image: url('../img/400.png');
+  }
+  .header {
+    min-width: 201px;
+  }
+  .logo {
+    max-width: 50px;
+    margin-top: 23px;
+    margin-bottom: 13px;
+  }
+  .headline {
+    font-size: 7px;
+    margin: 7px 0 7px 0;
+  }
+  .selecting {
+    margin-bottom: 3px;
+  }
+  .button {
+    min-width: 95px;
+    height: 17px;
+    font-size: 10px;
+    text-align: center;
+    padding: 0;
+  }
+  .inactive {
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0.11, 0.11);
+  }
+  .adress {
+    border-radius: 2px 0 0 2px;
+  }
+  .links {
+    border-radius: 0 2px 2px 0;
+  }
+  .form {
+    flex-direction: column;
+  }
+  .insertion_field {
+    width: 182px;
+    height: 25px;
+    border-radius: 14px;
+    font-size: 13px;
+    padding-left: 7px;
+  }
+  .next {
+    font-size: 14px;
+    border-radius: 25px;
+    background: #9674F9;
+    padding: 5px 0px 5px 0px;
+    min-width: 185px;
+    margin-left: 5px;
+  }
+  .box-meters {
+    font-size: 10px;
+    margin: 0 7px 0 7px;
+    justify-content: space-around;
+    padding-top: 3px;
+  }
+  #kv-meters {
+    height: 15px;
+    font-size: 11px;
+    min-width: 179px;
+    margin-bottom: 4px;
+  }
+  .selct-kv {
+    min-width: 220px;
+  }
+  .warning-box {
+    margin-top: 3px;
+    padding-left: 1px;
+    min-width: 201px;
+    margin-top: 1px;
+  }
+  .icon {
+    max-width: 7px;
+    max-height: 7px;
+    padding-top: 4px;
+  }
+  .warning {
+    margin-left: 1px;
+    font-size: 7px;
+  }
+  .warning_c {
+    font-size: 9px;
+  }
+  .statistics {
+    display: flex;
+    margin: auto;
+  }
+  .statistics2 {
+    padding-top: 10px;
+    width: 150px;
+  }
+}
